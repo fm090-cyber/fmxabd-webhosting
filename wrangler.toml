@@ -1,0 +1,12 @@
+name = "zip-hosting"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[[r2_buckets]]
+binding = "WEBSITES_BUCKET"
+bucket_name = "user-websites"
+
+[vars]
+ADMIN_API_KEY = "your-secret-key-here"
+MAX_FILE_SIZE = "10485760"  # 10MB
+ALLOWED_TYPES = ".zip,.html,.css,.js,.png,.jpg,.jpeg,.gif"
