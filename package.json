@@ -1,0 +1,24 @@
+{
+  "name": "zip-hosting-platform",
+  "version": "1.0.0",
+  "main": "src/worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build": "echo 'No build step required for Workers'",
+    "test": "echo 'No tests configured'",
+    "r2:create": "wrangler r2 bucket create user-websites",
+    "r2:list": "wrangler r2 bucket list",
+    "logs": "wrangler tail",
+    "publish": "wrangler publish"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "mime-types": "^2.1.35"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231121.0",
+    "wrangler": "^3.0.0",
+    "typescript": "^5.3.0"
+  }
+}
